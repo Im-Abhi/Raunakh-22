@@ -1,0 +1,11 @@
+.owl-nav .owl-prev,
+.owl-next {
+    font-size: 2rem !important;
+    background-color: aqua !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+    padding: 0.1rem 1rem !important;
+}
