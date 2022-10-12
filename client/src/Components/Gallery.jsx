@@ -7,8 +7,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Gallery = () => {
     return (
         <>
-            <div className="gallery__container">
-                <div className="about_heading text-center py-10 text-4xl italic">
+            <div className="gallery__container" id="gallery">
+                <div className="gallery_heading text-center py-10 text-4xl italic">
                     <h1 className="heading">Gallery</h1>
                 </div>
                 <OwlCarousel className='owl-theme' margin={10} loop dots={true}>
