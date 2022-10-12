@@ -26,19 +26,19 @@ const Contact = () => {
                 </div>
                 <form className="space-y-6 ng-untouched ng-pristine ng-valid" onSubmit={handleSubmit}>
                     <div>
-                        <label for="name" className="text-sm">Full name</label>
+                        <label htmlFor="name" className="text-sm">Full name</label>
                         <input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={name} onChange={e => setName(e.target.value)} required />
                     </div>
                     <div>
-                        <label for="email" className="text-sm">Email</label>
+                        <label htmlFor="email" className="text-sm">Email</label>
                         <input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={email} onChange={e => setEmail(e.target.value)} required />
                     </div>
                     <div>
-                        <label for="subject" className="text-sm">Subject</label>
+                        <label htmlFor="subject" className="text-sm">Subject</label>
                         <input id="subject" type="text" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={subject} onChange={e => setSubject(e.target.value)} required />
                     </div>
                     <div>
-                        <label for="message" className="text-sm">Message</label>
+                        <label htmlFor="message" className="text-sm">Message</label>
                         <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
                     </div>
                     <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-400 dark:text-gray-900">Send Message</button>
