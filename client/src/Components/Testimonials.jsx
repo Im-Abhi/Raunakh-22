@@ -11,8 +11,20 @@ const Testimonials = () => {
                 <div className="testimonials_heading text-center py-10 text-4xl italic">
                     <h1 className="heading">Testimonials</h1>
                 </div>
-                {/* <div className="grid grid-cols-3 gap-5 px-4"> */}
-                <OwlCarousel className='owl-theme' margin={10} nav={true} loop dots={false}>
+                <OwlCarousel className='owl-theme'
+                    margin={15}
+                    nav={true}
+                    loop={true}
+                    dots={false}
+                    items={1}
+                    responsive={
+                        {
+                            768: {
+                                items: 3
+                            }
+                        }
+                    }
+                >
                     <div className="text-center item bg-blue-100 p-4 rounded-2xl">
                         <h5 className="text-xl font-semibold mb-4">Maria Smantha</h5>
                         <h6 className="font-semibold text-blue-600 mb-4">Web Developer</h6>
@@ -457,7 +469,6 @@ const Testimonials = () => {
                     </div>
                 </OwlCarousel>;
             </div>
-            {/* </div> */}
         </>
     )
 }
