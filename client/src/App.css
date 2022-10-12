@@ -5,7 +5,6 @@
 }
 
 .owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot {
+.owl-carousel .owl-nav button.owl-next {
     padding: 0.1rem 1rem !important;
 }
