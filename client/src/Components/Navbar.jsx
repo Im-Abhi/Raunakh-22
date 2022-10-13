@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="relative">
+        <div className="bg-[#070B1E] border-b sticky top-0 z-50">
             <nav className="flex flex-row mx-auto max-w-7xl my-2 justify-between px-4 relative">
                 <div className="flex w-[100px] h-[100px]">
                     <img
