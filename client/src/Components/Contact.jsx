@@ -1,48 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setName('');
-        setEmail('');
-        setMessage('');
-        setSubject('');
-    }
 
     return (
         <>
-            <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-                <div className="flex flex-col justify-between">
+            <div className="max-w-screen-xl px-8 py-12 mx-auto rounded-lg md:px-12 lg:px-16 xl:px-32 bg-gray-800 text-gray-100">
+                <div className="flex justify-evenly items-center sm:flex-row flex-col gap-5">
                     <div className="space-y-2">
                         <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Questions ?</h2>
-                        <div className="dark:text-gray-400">Connect with us</div>
                     </div>
-                    <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
+                    <div className="cta">
+                        <a href="mailto:vedanttrivedi02@gmail.com">
+                            <button type="button" class="inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-blue-400 hover:text-white focus:outline-none focus:ring-0 transition duration-300 ease-in-out">
+                                Contact
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <form className="space-y-6 ng-untouched ng-pristine ng-valid" onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="name" className="text-sm">Full name</label>
-                        <input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={name} onChange={e => setName(e.target.value)} required />
-                    </div>
-                    <div>
-                        <label htmlFor="email" className="text-sm">Email</label>
-                        <input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={email} onChange={e => setEmail(e.target.value)} required />
-                    </div>
-                    <div>
-                        <label htmlFor="subject" className="text-sm">Subject</label>
-                        <input id="subject" type="text" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={subject} onChange={e => setSubject(e.target.value)} required />
-                    </div>
-                    <div>
-                        <label htmlFor="message" className="text-sm">Message</label>
-                        <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800 border border-white" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
-                    </div>
-                    <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-400 dark:text-gray-900">Send Message</button>
-                </form>
             </div>
         </>
     )
