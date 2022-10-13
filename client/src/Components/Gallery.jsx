@@ -1,7 +1,7 @@
 import React from "react";
 import OwlCarousel from 'react-owl-carousel';
 
-import { Galleryfour, Galleryone, Gallerythree, Gallerytwo } from "../Constants/GalleryImages";
+import { Galleryfive, Galleryfour, Galleryone, Gallerysix, Gallerythree, Gallerytwo } from "../Constants/GalleryImages";
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -48,6 +48,16 @@ const Gallery = () => {
                     <div className="item">
                         <div className="image_container rounded-lg shadow-lg shadow-black-800 h-72 border-0 border-l-2 border-white">
                             <img src={Galleryfour} alt="" className="w-full h-full" />
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="image_container rounded-lg shadow-lg shadow-black-800 h-72 border-0 border-l-2 border-white">
+                            <img src={Galleryfive} alt="" className="w-full h-full" />
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="image_container rounded-lg shadow-lg shadow-black-800 h-72 border-0 border-l-2 border-white">
+                            <img src={Gallerysix} alt="" className="w-full h-full" />
                         </div>
                     </div>
                 </OwlCarousel>
