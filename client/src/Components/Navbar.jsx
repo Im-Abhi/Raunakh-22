@@ -44,17 +44,10 @@ const Navbar = () => {
                     <a className="text-xl" href="#about" rel="noreferrer">
                         About
                     </a>
-                    <a
-                        className="text-xl"
-                        href="#testimonials"
-                        rel="noreferrer"
-                    >
-                        Testimonials
-                    </a>
                     <a className="text-xl" href="#gallery" rel="noreferrer">
                         Gallery
                     </a>
-                    <a className="text-xl" href="#society" rel="noreferrer">
+                    <a className="text-xl" href="#societies" rel="noreferrer">
                         Society
                     </a>
                     <a className="text-xl" href="#contact">
@@ -95,14 +88,6 @@ const Navbar = () => {
                             </a>
                             <a
                                 className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
-                                href="#testimonials"
-                                onClick={handleMenuToggle}
-                                rel="noreferrer"
-                            >
-                                Testimonials
-                            </a>
-                            <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
                                 href="#gallery"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
@@ -111,7 +96,7 @@ const Navbar = () => {
                             </a>
                             <a
                                 className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
-                                href="#society"
+                                href="#societies"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
                             >
