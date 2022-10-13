@@ -1,6 +1,7 @@
 import React from "react";
 
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaHeart } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaHeart } from 'react-icons/fa';
+import { CgWebsite } from 'react-icons/cg';
 
 const Footer = () => {
     return (
@@ -11,16 +12,16 @@ const Footer = () => {
                         <FaHeart className="text-red-500 inline mx-2" />
                         by IEEE Web Team</h1>
                     <div className="footer__socials flex items-center text-white gap-4 text-2xl pb-2 sm:p-0">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" className="hover:text-[#1251b1]">
+                        <a href="https://www.facebook.com/ieeemsit/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1251b1]">
                             <FaFacebookF />
                         </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" className="hover:text-[#ab146f]">
+                        <a href="https://www.instagram.com/ieeemsit/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ab146f]">
                             <FaInstagram />
                         </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" className="hover:text-[#1b9ff1]">
-                            <FaTwitter />
+                        <a href="http://ieee.msit.in" target="_blank" rel="noopener noreferrer" className="hover:text-[#1b9ff1]">
+                            <CgWebsite />
                         </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" className="hover:text-[#1873b9]">
+                        <a href="https://in.linkedin.com/company/ieeemsit/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1873b9]">
                             <FaLinkedinIn />
                         </a>
                     </div>
