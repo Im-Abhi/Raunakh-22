@@ -16,7 +16,7 @@ const RefundPolicy = () => {
                 For further refund queries mail us at-
                 <strong
                 ><u
-                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank"
+                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank" rel="noreferrer"
                 >mutants.music.msit@gmail.com</a></u></strong>.
             </p>
 
