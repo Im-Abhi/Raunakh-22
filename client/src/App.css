@@ -9,6 +9,6 @@
     padding: 0.1rem 1rem !important;
 }
 
-/* .owl-carousel .owl-dots .owl-dot {
-    color: red !important;
-} */
+.owl-dots {
+    margin-top: 2rem !important;
+}

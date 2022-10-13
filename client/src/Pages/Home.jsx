@@ -1,17 +1,17 @@
 import React from "react";
 
-import Testimonials from "../Components/Testimonials";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import Societies from "../Components/Societies";
 
 const Home = () => {
     return (
         <>
             <About />
-            <Testimonials />
             <Gallery />
+            <Societies />
             <Contact />
             <Footer />
         </>

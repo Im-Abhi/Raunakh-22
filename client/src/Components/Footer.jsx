@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <>
             <footer className="text-center border-t-4 border-white bg-gray-800">
-                <section className="section1 flex justify-evenly">
+                <section className="section1 flex justify-evenly flex-col sm:flex-row items-center">
                     <h1 className="made-by-heading py-4 text-xl italic text-white">Made with
                         <FaHeart className="text-red-500 inline mx-2" />
                         by IEEE Web Team</h1>
-                    <div className="footer__socials flex items-center text-white gap-4 text-2xl">
+                    <div className="footer__socials flex items-center text-white gap-4 text-2xl pb-2 sm:p-0">
                         <a href="http://" target="_blank" rel="noopener noreferrer" className="hover:text-[#1251b1]">
                             <FaFacebookF />
                         </a>

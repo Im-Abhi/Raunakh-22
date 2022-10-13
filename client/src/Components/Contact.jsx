@@ -11,7 +11,7 @@ const Contact = () => {
                     </div>
                     <div className="cta">
                         <a href="mailto:vedanttrivedi02@gmail.com">
-                            <button type="button" class="inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded-full hover:bg-blue-400 hover:text-white focus:outline-none focus:ring-0 transition duration-300 ease-in-out">
+                            <button type="button" className="inline-block px-6 py-2 border-2 border-yellow-600 text-yellow-600 font-medium text-xs leading-tight uppercase rounded-full hover:bg-yellow-600 hover:text-white focus:outline-none focus:ring-0 transition duration-300 ease-in-out">
                                 Contact
                             </button>
                         </a>

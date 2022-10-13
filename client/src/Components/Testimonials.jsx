@@ -7,9 +7,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Testimonials = () => {
     return (
         <>
-            <div className="testimonials__container" id="testimonials">
+            <div className="testimonials__container border-t-2 border-white p-4 pb-16" id="testimonials">
                 <div className="testimonials_heading text-center py-10 text-4xl italic">
-                    <h1 className="heading">Testimonials</h1>
+                    <h1 className="heading text-4xl font-bold drop-shadow-lg">Testimonials</h1>
                 </div>
                 <OwlCarousel className='owl-theme'
                     margin={15}
@@ -467,7 +467,7 @@ const Testimonials = () => {
                             </li>
                         </ul>
                     </div>
-                </OwlCarousel>;
+                </OwlCarousel>
             </div>
         </>
     )
