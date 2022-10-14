@@ -1,17 +1,7 @@
 import React, { Fragment } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
-import {
-    Buzz,
-    IEEE,
-    Mutants,
-    NssMSI,
-    NssMsit,
-    Octave4,
-    Prakriti4,
-    Rotaract,
-    unfiltered
-} from "../Constants/SocietyImages";
+import { IEEE, Mutants, NssMSI, Octave4, Prakriti4 } from "../Constants/SocietyImages";
 
 const icons = [<FaFacebookF />, <FaLinkedin />, <FaInstagram />];
 
@@ -26,12 +16,28 @@ const headedBySocietyData = {
                 { link: null },
             ],
         },
+        {
+            image: Octave4,
+            links: [
+                { link: "https://www.facebook.com/octave.msit/" },
+                { link: "https://www.linkedin.com/company/octave-music-society/" },
+                { link: "https://www.instagram.com/octavemusicsociety/" },
+            ],
+        },
     ]
 }
 
 const collaborationSocietyData = {
     heading: "In Collaboration With",
     data: [
+        {
+            image: IEEE,
+            links: [
+                { link: "https://www.facebook.com/ieeemsit/" },
+                { link: "https://in.linkedin.com/company/ieeemsit/" },
+                { link: "https://www.instagram.com/ieeemsit/" },
+            ],
+        },
         {
             image: Prakriti4,
             links: [
@@ -41,77 +47,11 @@ const collaborationSocietyData = {
             ],
         },
         {
-            image: Octave4,
-            links: [
-                { link: "https://www.facebook.com/octave.msit/" },
-                { link: "https://www.linkedin.com/company/octave-music-society/" },
-                { link: "https://www.instagram.com/octavemusicsociety/" },
-            ],
-        },
-        {
-            image: IEEE,
-            links: [
-                { link: "https://www.facebook.com/ieeemsit/" },
-                { link: "https://in.linkedin.com/company/ieeemsit/" },
-                { link: "https://www.instagram.com/ieeemsit/" },
-            ],
-        },
-    ]
-}
-
-const mediaPartnerSocietyData = {
-    heading: "With Media Partner",
-    data: [
-        {
-            image: unfiltered,
-            links: [
-                { link: null },
-                { link: null },
-                { link: "https://www.instagram.com/inceptionwavemsi_msit/" },
-            ],
-        },
-    ]
-}
-
-const outreachPartnerSocietyData = {
-    heading: "And Outreach Partner",
-    data: [
-        {
-            image: Buzz,
-            links: [
-                { link: "https://www.facebook.com/ipubuzz/" },
-                { link: "https://www.linkedin.com/company/ipubuzz" },
-                { link: "https://www.instagram.com/ipubuzz/" },
-            ],
-        },
-    ]
-}
-
-const supportSocietyData = {
-    heading: "With Support",
-    data: [
-        {
             image: NssMSI,
             links: [
                 { link: "https://www.facebook.com/nssmsi/" },
                 { link: "https://www.linkedin.com/company/national-service-scheme-msi/" },
                 { link: "https://www.instagram.com/nss_msi/" },
-            ],
-        },
-        {
-            image: NssMsit,
-            links: [
-                { link: null },
-                { link: null },
-                { link: null },
-            ],
-        },
-        {
-            image: Rotaract,
-            links: [
-                { link: "https://www.facebook.com/RacNewDelhiNext" },
-                { link: null },
-                { link: "https://www.instagram.com/rcnewdelhinext/" },
             ],
         },
     ]
@@ -120,7 +60,7 @@ const supportSocietyData = {
 const RenderSocietyBlock = ({ heading, dataArray }) => {
     return (
         <div className="societies__section flex flex-col gap-6">
-            <h2 className="w-max mx-auto uppercase text-xl border-b px-1">{heading}</h2>
+            <h2 className="w-max mx-auto uppercase text-2xl border-b px-1 font-bold uppercase">{heading}</h2>
             <div className="flex flex-wrap gap-5 w-11/12 mx-auto">
                 {(dataArray).map((data, index) => {
                     let { image, links } = data;
@@ -162,18 +102,15 @@ const RenderSocietyBlock = ({ heading, dataArray }) => {
 const Societies = () => {
     return (
         <>
-            <div className="societies__container p-4 border-t-2 border-white pb-16" id="societies">
+            <div className="societies__container p-4 border-t-2 border-white pb-16 text-[#070b1e] bg-white" id="societies">
                 <div className="societies_heading text-center py-10 text-4xl italic">
-                    <h1 className="heading">Societies</h1>
+                    <h1 className="heading font-bold text-5xl">Societies</h1>
                 </div>
                 <div className="flex flex-col gap-16">
                     {
                         [
                             headedBySocietyData,
-                            collaborationSocietyData,
-                            mediaPartnerSocietyData,
-                            outreachPartnerSocietyData,
-                            supportSocietyData
+                            collaborationSocietyData
                         ].map((societyData, id) => {
                             return (
                                 <RenderSocietyBlock
@@ -186,7 +123,6 @@ const Societies = () => {
                     }
                 </div>
             </div>
-            {/* <!-- team-area-end --> */}
         </>
     )
 }

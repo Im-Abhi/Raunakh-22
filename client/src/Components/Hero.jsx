@@ -6,7 +6,10 @@ import razorpayBtn from '../Assets/gallery/RazorpayBtnImage.png';
 const Hero = () => {
     return (
         <>
-            <section className="py-8 md:py-12 lg:py-20" id='home'>
+            <section className="py-8 md:py-12 lg:py-20 min-h-[80vh]" id='home'>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
                 <div className="flex flex-col gap-8 sm:flex-row-reverse sm:w-11/12 sm:mx-auto">
                     <div className="flex flex-col gap-6 sm:flex-1 sm:justify-center md:flex-row md:items-center">
                         <div className="w-max mx-auto text-center">
