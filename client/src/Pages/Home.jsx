@@ -7,6 +7,7 @@ import Footer from "../Components/Footer";
 import Societies from "../Components/Societies";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
+import DonateNow from "../Components/DonateNow";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Navbar />
             <Hero />
             <About />
+            <DonateNow />
             <Gallery />
             <Societies />
             <Contact />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaHeart } from 'react-icons/fa';
 import { CgWebsite } from 'react-icons/cg';
@@ -28,13 +29,13 @@ const Footer = () => {
                 </section>
                 <section className="section2 grid sm:grid-cols-3 grid-cols-1 pb-4 text-gray-400">
                     <p className="text-sm">
-                        <a href="/privacy-policy">Privacy Policy</a>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
                     </p>
                     <p className="text-sm">
-                        <a href="/terms-and-conditions">Terms and Conditions</a>
+                        <Link to="/terms-and-conditions">Terms and Conditions</Link>
                     </p>
                     <p className="text-sm">
-                        <a href="/refund-policy">Refund Policy</a>
+                        <Link to="/refund-policy">Refund Policy</Link>
                     </p>
                 </section>
             </footer>

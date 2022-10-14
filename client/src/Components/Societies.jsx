@@ -136,7 +136,7 @@ const RenderSocietyBlock = ({ heading, dataArray }) => {
                                                 if (item.link) {
                                                     return (
                                                         <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
-                                                            <span className="grid place-content-center text-lg text-[#343434]/70 p-3 bg-white rounded-[50%] hover:bg-[#070b1e] hover:text-white transition-all duration-300">
+                                                            <span className="grid place-content-center text-lg text-[#343434]/70 p-3 bg-white rounded-[50%] hover:bg-blue-600 hover:text-white transition-all duration-300">
                                                                 {icons[index]}
                                                             </span>
                                                         </a>
