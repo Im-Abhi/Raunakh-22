@@ -7,7 +7,7 @@ const TermsAndConditions = () => {
             <p>OVERVIEW</p>
             <p>
                 This website is operated by
-                <strong>Octave Music Society of MSIT and Prakriti MSIT</strong>.
+                <strong>Octave Music Society of MSIT</strong>.
                 Throughout the site, the terms “we”, “us” and “our” refer to<strong>
                     Raunakh</strong>. <strong>Raunakh </strong>offers this website, including all
                 information, tools and services available from this site to you, the user,
