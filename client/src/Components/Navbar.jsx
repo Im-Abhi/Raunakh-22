@@ -37,27 +37,20 @@ const Navbar = () => {
                     />
                 </div>
 
-                <div className="md:flex md:flex-row items-center gap-4 hidden">
-                    <a className="text-xl" href="#home" rel="noreferrer">
+                <div className="md:flex md:flex-row items-center gap-5 hidden">
+                    <a className="text-xl hover:text-blue-500" href="#home" rel="noreferrer">
                         Home
                     </a>
-                    <a className="text-xl" href="#about" rel="noreferrer">
+                    <a className="text-xl hover:text-blue-500" href="#about" rel="noreferrer">
                         About
                     </a>
-                    <a
-                        className="text-xl"
-                        href="#testimonials"
-                        rel="noreferrer"
-                    >
-                        Testimonials
-                    </a>
-                    <a className="text-xl" href="#gallery" rel="noreferrer">
+                    <a className="text-xl hover:text-blue-500" href="#gallery" rel="noreferrer">
                         Gallery
                     </a>
-                    <a className="text-xl" href="#society" rel="noreferrer">
+                    <a className="text-xl hover:text-blue-500" href="#societies" rel="noreferrer">
                         Society
                     </a>
-                    <a className="text-xl" href="#contact">
+                    <a className="text-xl hover:text-blue-500" href="#contact">
                         Contact
                     </a>
                 </div>
@@ -78,7 +71,7 @@ const Navbar = () => {
 
                         <div className="flex flex-col justify-center items-center h-full w-full mt-[120px] sm:mt-[200px] py-0 px-[30px]">
                             <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
+                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0 hover:text-blue-500"
                                 href="#home"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
@@ -86,7 +79,7 @@ const Navbar = () => {
                                 Home
                             </a>
                             <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
+                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0 hover:text-blue-500"
                                 href="#about"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
@@ -94,15 +87,7 @@ const Navbar = () => {
                                 About
                             </a>
                             <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
-                                href="#testimonials"
-                                onClick={handleMenuToggle}
-                                rel="noreferrer"
-                            >
-                                Testimonials
-                            </a>
-                            <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
+                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0 hover:text-blue-500"
                                 href="#gallery"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
@@ -110,15 +95,15 @@ const Navbar = () => {
                                 Gallery
                             </a>
                             <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
-                                href="#society"
+                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0 hover:text-blue-500"
+                                href="#societies"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"
                             >
                                 Society
                             </a>
                             <a
-                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0"
+                                className="text-center w-full text-2xl sm:text-3xl font-medium py-5 px-0 hover:text-blue-500"
                                 href="#contact"
                                 onClick={handleMenuToggle}
                                 rel="noreferrer"

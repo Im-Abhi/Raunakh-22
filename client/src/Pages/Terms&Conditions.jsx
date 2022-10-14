@@ -436,7 +436,7 @@ const TermsAndConditions = () => {
             <p>
                 Questions about the Terms of Service should be sent to us at
                 <strong>
-                    <a href="mailto:mutants.music.msit@gmail.com" target="_blank"
+                    <a href="mailto:mutants.music.msit@gmail.com" target="_blank" rel="noreferrer"
                     >mutants.music.msit@gmail.com</a>
                 </strong>.
             </p>

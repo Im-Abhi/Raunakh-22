@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
                 your information, at anytime, by contacting us at
                 <strong
                 ><u
-                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank"
+                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank" rel="noreferrer"
                 >mutants.music.msit@gmail.com</a
                         ></u
                     ></strong
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
                 For more insight, you may also want to read terms and conditions of
                 razorpay on
                 <u
-                ><a href="https://razorpay.com" rel="nofollow" target="_blank"
+                ><a href="https://razorpay.com" rel="nofollow noreferrer" target="_blank"
                 >https://razorpay.com</a
                     ></u
                 >
@@ -172,7 +172,7 @@ const PrivacyPolicy = () => {
                 information contact our Privacy Compliance Officer at
                 <strong
                 ><u
-                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank"
+                ><a href="mailto:mutants.music.msit@gmail.com" target="_blank" rel="noreferrer"
                 >mutants.music.msit@gmail.com</a
                         ></u
                     ></strong
