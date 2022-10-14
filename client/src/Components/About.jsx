@@ -6,8 +6,11 @@ import { BiDonateHeart } from 'react-icons/bi';
 const About = () => {
     return (
         <>
-            <div className="about__container p-4 border-t-2 border-white pb-16" id="about">
-                <div className="about_heading text-center py-10 text-4xl italic">
+            <div className="about__container p-4 py-28" id="about">
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <div className="about_heading text-center pb-20 text-4xl italic">
                     <h1 className="heading text-4xl font-bold drop-shadow-lg">Towards a brighter Diwali!</h1>
                 </div>
                 <div className="grid md:grid-cols-3 gap-10 grid-cols-1 px-10">

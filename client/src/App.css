@@ -1,3 +1,9 @@
+#home,
+#about {
+    height: 100%;
+    overflow: hidden;
+}
+
 .owl-nav .owl-prev,
 .owl-next {
     font-size: 2rem !important;
