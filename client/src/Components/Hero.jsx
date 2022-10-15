@@ -7,7 +7,7 @@ import razorpayBtn from '../Assets/gallery/RazorpayBtnImage.png';
 const Hero = () => {
     return (
         <>
-            <section className="py-8 md:py-12 lg:py-20 min-h-[80vh]" id='home'>
+            <section className="py-8 md:py-12 lg:py-20 min-h-[75vh]" id='home'>
                 <div id='stars'></div>
                 <div id='stars2'></div>
                 <div id='stars3'></div>
