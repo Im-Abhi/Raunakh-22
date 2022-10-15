@@ -27,14 +27,14 @@ router.post('/checkout', async (req, res) => {
         const { name, email, phone, amount } = req.body
 
         const options = {
-            amount,  // amount in the smallest currency unit
+            amount: amount * 100,  // amount in the smallest currency unit
             currency: "INR",
             receipt: new mongoose.Types.ObjectId()
         };
         instance.orders.create(options, async function (error, order) {
             if (error) return res.status(500).json({ error })
 
-            const transaction = await Transaction.create({ name, email, phone, receipt: options.receipt, orderId: order.id, amount: amount / 100 })
+            const transaction = await Transaction.create({ name, email, phone, receipt: options.receipt, orderId: order.id, amount })
             res.json({ id: order.id })
             setTimeout(async () => {
                 try {
@@ -50,7 +50,7 @@ router.post('/confirm-payment', async (req, res) => {
         const { razorpay_payment_id, razorpay_order_id, razorpay_signature } = req.body
         const transaction = await Transaction.findOne({ orderId: razorpay_order_id })
         const generatedSignature = sha256.hmac(process.env.RAZORPAY_KEY_SECRET, razorpay_order_id + "|" + razorpay_payment_id);
-        if (generatedSignature !== razorpay_signature) return res.status(401).json({ error: "Couldn't process the payment" })
+        if (generatedSignature !== razorpay_signature) return res.status(401).json({ error: "Couldn't process payment" })
 
         transaction.paymentId = razorpay_payment_id
         transaction.signature = razorpay_signature
@@ -58,7 +58,7 @@ router.post('/confirm-payment', async (req, res) => {
         await transaction.save()
 
         res.json({ msg: "Payment successful" })
-    } catch { res.status(500).json({ error: "Couldn't process the payment" }) }
+    } catch { res.status(500).json({ error: "Couldn't process payment" }) }
 })
 
 module.exports = router

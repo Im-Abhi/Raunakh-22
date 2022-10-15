@@ -5,6 +5,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsAndConditions from "./Pages/Terms&Conditions";
 import RefundPolicy from "./Pages/RefundPolicy";
 import Home from "./Pages/Home";
+import Donate from "./Pages/Donate";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} exact={true} />
+          <Route path="/donate" element={<Donate />} exact={true} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />

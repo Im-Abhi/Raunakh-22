@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsFillPlayCircleFill } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 import razorpayBtn from '../Assets/gallery/RazorpayBtnImage.png';
 
@@ -32,9 +33,9 @@ const Hero = () => {
                         </div>
                         <div className="w-11/12 max-w-sm mx-auto text-center rounded bg-white py-4 flex flex-col justify-center items-center gap-12 lg:max-w-xl">
                             <h1 className="w-4/5 mx-auto text-2xl uppercase font-semibold text-[#233F4D] lg:text-4xl">Help Us Achive Our Goal</h1>
-                            <button className="w-max mx-auto grid place-content-center">
+                            <Link to='/donate' className="w-max mx-auto grid place-content-center">
                                 <img src={razorpayBtn} alt="Donate" className='w-44 md:w-60 lg:w-80' />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
