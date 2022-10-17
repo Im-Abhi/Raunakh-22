@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
-import { IEEE, Mutants, NssMSI, Octave4, Prakriti4 } from "../Constants/SocietyImages";
+import { Aarambh, AntraEncore, Astitva, IEEE, Meraki, Msi, Mutants, NssMSI, Octave4, Prakriti4, Sifar, Unity } from "../Constants/SocietyImages";
 
 const icons = [<FaFacebookF />, <FaLinkedin />, <FaInstagram />];
 
@@ -28,7 +28,7 @@ const headedBySocietyData = {
 }
 
 const collaborationSocietyData = {
-    heading: "In Collaboration With",
+    heading: "Main Collaborators",
     data: [
         {
             image: IEEE,
@@ -39,14 +39,6 @@ const collaborationSocietyData = {
             ],
         },
         {
-            image: Prakriti4,
-            links: [
-                { link: "https://www.facebook.com/msitprakriti/" },
-                { link: "https://in.linkedin.com/company/prakritimsit/" },
-                { link: "https://www.instagram.com/prakriti_msit/" },
-            ],
-        },
-        {
             image: NssMSI,
             links: [
                 { link: "https://www.facebook.com/nssmsi/" },
@@ -54,49 +46,112 @@ const collaborationSocietyData = {
                 { link: "https://www.instagram.com/nss_msi/" },
             ],
         },
+        {
+            image: Prakriti4,
+            links: [
+                { link: "https://www.facebook.com/msitprakriti/" },
+                { link: "https://in.linkedin.com/company/prakritimsit/" },
+                { link: "https://www.instagram.com/prakriti_msit/" },
+            ],
+        }
+    ]
+}
+
+const culturalSocietyData = {
+    heading: "Cultural collaborators",
+    data: [
+        {
+            image: Unity,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/unity_streets/" },
+            ],
+        },
+        {
+            image: Sifar,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/msisifar/" },
+            ],
+        },
+        {
+            image: Aarambh,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/aarambhmsit/" },
+            ],
+        },
+        {
+            image: Astitva,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/astitva_mutants_dance/" },
+            ],
+        },
+        {
+            image: AntraEncore,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/msi_antraencore/" },
+            ],
+        }
+    ]
+}
+
+const MediaPartner = {
+    heading: "Media Partner",
+    data: [
+        {
+            image: Msi,
+            links: [
+                { link: null },
+                { link: null },
+                { link: null },
+            ],
+        }
+    ]
+}
+
+const CreativityPartner = {
+    heading: "Creativity Partner",
+    data: [
+        {
+            image: Meraki,
+            links: [
+                { link: null },
+                { link: null },
+                { link: "https://instagram.com/meraki_msi/" },
+            ],
+        }
     ]
 }
 
 const RenderSocietyBlock = ({ heading, dataArray }) => {
-    return (
-        <div className="societies__section flex flex-col gap-6">
-            <h2 className="w-max mx-auto uppercase text-2xl border-b px-1 font-bold uppercase">{heading}</h2>
-            <div className="flex flex-wrap gap-5 w-11/12 mx-auto">
-                {(dataArray).map((data, index) => {
-                    let { image, links } = data;
-
-                    return (
-                        <div key={index} className="mx-auto grid place-content-center basis-[30%]">
-                            <div className="cursor-pointer flex items-center justify-center relative bg-white w-44 aspect-square rounded-[50%] overflow-hidden">
-                                <img src={image} alt="" className="max-w-[90%] max-h-[90%]" />
-                                {
-                                    (links[0].link || links[1].link || links[2].link) && (
-                                        <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 flex items-center justify-evenly gap-2 p-2 transition-all duration-300">
-                                            {(links).map((item, index) => {
-                                                if (item.link) {
-                                                    return (
-                                                        <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
-                                                            <span className="grid place-content-center text-lg text-[#343434]/70 p-3 bg-white rounded-[50%] hover:bg-blue-600 hover:text-white transition-all duration-300">
-                                                                {icons[index]}
-                                                            </span>
-                                                        </a>
-                                                    )
-                                                } else {
-                                                    return (
-                                                        <Fragment key={index}></Fragment>
-                                                    )
-                                                }
-                                            })}
-                                        </div>
-                                    )
-                                }
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
+    return <div className="societies__section flex flex-col gap-6">
+        <h2 className="w-max mx-auto uppercase text-2xl border-b px-1 font-bold">{heading}</h2>
+        <div className="flex flex-wrap gap-5 w-11/12 mx-auto">
+            {(dataArray).map((data, index) => {
+                let { image, links } = data;
+                return <div key={index} className="mx-auto grid place-content-center basis-[30%]">
+                    <div className="cursor-pointer flex items-center justify-center relative bg-white w-44 aspect-square rounded-[50%] overflow-hidden">
+                        <img src={image} alt="" className="max-w-[90%] max-h-[90%]" />
+                        {(links[0].link || links[1].link || links[2].link) && <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 flex items-center justify-evenly gap-2 p-2 transition-all duration-300">
+                            {(links).map((item, index) => item.link ? <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+                                <span className="grid place-content-center text-lg text-[#343434]/70 p-3 bg-white rounded-[50%] hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                    {icons[index]}
+                                </span>
+                            </a> : <Fragment key={index}></Fragment>)}
+                        </div>}
+                    </div>
+                </div>
+            })}
         </div>
-    )
+    </div>
 }
 
 const Societies = () => {
@@ -110,7 +165,10 @@ const Societies = () => {
                     {
                         [
                             headedBySocietyData,
-                            collaborationSocietyData
+                            collaborationSocietyData,
+                            culturalSocietyData,
+                            MediaPartner,
+                            CreativityPartner
                         ].map((societyData, id) => {
                             return (
                                 <RenderSocietyBlock
