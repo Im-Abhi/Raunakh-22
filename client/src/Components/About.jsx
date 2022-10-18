@@ -20,9 +20,9 @@ const About = () => {
                                 <FcIdea className="text-7xl rounded-full" />
                             </a>
                             <div className="p-7">
-                                <h5 className="text-gray-900 text-xl font-medium mb-2">What is Raunakh?</h5>
+                                <h5 className="text-gray-900 text-xl font-medium mb-2">What is Raunak?</h5>
                                 <p className="text-gray-700 text-sm mb-4">
-                                    Raunakh is a special fundraising event, held annually close to this festival of happiness and lights - Diwali, to brighten up a few faces for this prosperous occasion
+                                    Raunak is a special fundraising event, held annually close to this festival of happiness and lights - Diwali, to brighten up a few faces for this prosperous occasion
                                 </p>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const About = () => {
                             <div className="p-7">
                                 <h5 className="text-gray-900 text-xl font-medium mb-2">What does it do?</h5>
                                 <p className="text-gray-700 text-sm mb-4">
-                                    A charity Fundraiser by Octave Music Society of MSIT in Collaboration with IEEE MSIT and Prakriti MSIT to raise contributions and help out the disadvantaged and less fortunate citizen celebrate a prosperous, memorable Diwali.
+                                    A charity Fundraiser by Octave Music Society of MSIT in Collaboration with IEEE MSIT, NSS MSI and Prakriti MSIT to raise contributions and help out the disadvantaged and less fortunate citizen celebrate a prosperous, memorable Diwali.
                                 </p>
                             </div>
                         </div>
